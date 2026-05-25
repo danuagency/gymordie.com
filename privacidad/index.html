@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — GymOrDie</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 0 1rem 4rem;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    header {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid #2a2a2a;
+      margin-bottom: 2.5rem;
+    }
+    header .logo { font-size: 1.6rem; font-weight: 800; color: #ff3b30; letter-spacing: 1px; }
+    header h1 { font-size: 2rem; font-weight: 700; margin-top: .4rem; color: #fff; }
+    header .meta { font-size: .85rem; color: #888; margin-top: .4rem; }
+    h2 {
+      font-size: 1.15rem; font-weight: 700; color: #fff;
+      margin: 2.5rem 0 .75rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid #222;
+    }
+    h3 { font-size: 1rem; font-weight: 600; color: #ccc; margin: 1.5rem 0 .5rem; }
+    p { margin-bottom: .9rem; color: #ccc; }
+    ul { margin: .5rem 0 1rem 1.4rem; }
+    li { margin-bottom: .4rem; color: #ccc; }
+    table {
+      width: 100%; border-collapse: collapse;
+      margin: 1rem 0 1.5rem; font-size: .9rem;
+    }
+    th {
+      background: #1a1a1a; color: #fff; text-align: left;
+      padding: .6rem .8rem; font-weight: 600;
+    }
+    td { padding: .55rem .8rem; border-bottom: 1px solid #222; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    a { color: #ff3b30; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block; background: #1e1e1e; border: 1px solid #333;
+      border-radius: 4px; padding: .15rem .5rem; font-size: .8rem;
+      color: #aaa; margin-left: .4rem;
+    }
+    .highlight {
+      background: #1a1a1a; border-left: 3px solid #ff3b30;
+      padding: .8rem 1rem; border-radius: 0 4px 4px 0;
+      margin: 1rem 0 1.5rem;
+    }
+    footer {
+      margin-top: 4rem; padding-top: 1.5rem;
+      border-top: 1px solid #222;
+      font-size: .82rem; color: #666; text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">GYMORDIE</div>
+    <h1>Política de Privacidad</h1>
+    <p class="meta">Última actualización: 25 de mayo de 2026 &nbsp;·&nbsp; Versión 1.1</p>
+  </header>
+
+  <!-- 1 -->
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    <strong>ASOCIACIÓN JUNIOR EMPRESA DANU</strong><br>
+    CIF: G56505472<br>
+    Domicilio: Plaza San Martín Nº 1, 28013, Madrid, España<br>
+    Contacto: <a href="mailto:hello@gymordie.com">hello@gymordie.com</a>
+  </p>
+
+  <!-- 2 -->
+  <h2>2. Datos que recopilamos y por qué</h2>
+  <p>
+    La siguiente tabla resume todos los datos personales que recopila GymOrDie, la finalidad
+    de cada uno y la base jurídica que ampara el tratamiento conforme al RGPD.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Dato</th>
+        <th>Finalidad</th>
+        <th>Base jurídica (RGPD art. 6)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Nombre y apellidos</strong></td>
+        <td>Identificación en la cuenta, perfil, grupos, ranking y notificaciones</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Dirección de correo electrónico</strong></td>
+        <td>Autenticación, verificación de cuenta, recuperación de contraseña, comunicaciones transaccionales del servicio</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Dirección física</strong><br><small>(calle, ciudad, CP)</small></td>
+        <td>Cumplimiento KYC obligatorio (Ley 10/2010 AML) para habilitar retiradas bancarias mediante Stripe Connect</td>
+        <td>Obligación legal (6.1.c)</td>
+      </tr>
+      <tr>
+        <td><strong>DNI / NIE</strong></td>
+        <td>Verificación de identidad KYC para retiradas bancarias. Se almacena cifrado (AES-256-GCM) y se transmite a Stripe</td>
+        <td>Obligación legal (6.1.c)</td>
+      </tr>
+      <tr>
+        <td><strong>IBAN</strong></td>
+        <td>Procesamiento de transferencias bancarias SEPA de retirada de saldo. Se almacena cifrado (AES-256-GCM)</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha de nacimiento</strong></td>
+        <td>Verificación de mayoría de edad y KYC de Stripe Connect</td>
+        <td>Ejecución del contrato / obligación legal (6.1.b y c)</td>
+      </tr>
+      <tr>
+        <td><strong>Ubicación GPS exacta</strong></td>
+        <td>Verificación puntual de presencia física en el gimnasio en el momento del check-in (radio 100 m). No se rastrea de forma continua</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Selfie (fotografía)</strong></td>
+        <td>Segundo factor de verificación antifraude del check-in. No se realiza reconocimiento facial</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Mensajes de chat grupal</strong></td>
+        <td>Comunicación entre miembros del mismo grupo dentro de la app</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Mensajes de soporte</strong></td>
+        <td>Atención al cliente y resolución de incidencias</td>
+        <td>Interés legítimo (6.1.f)</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de check-in</strong><br><small>(asistencia al gimnasio)</small></td>
+        <td>Evaluación del cumplimiento del reto, cálculo de penalizaciones y redistribución, rachas y logros</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>ID de usuario</strong></td>
+        <td>Autenticación y asociación de todos los datos de la cuenta</td>
+        <td>Ejecución del contrato (6.1.b)</td>
+      </tr>
+      <tr>
+        <td><strong>Token de dispositivo (push)</strong></td>
+        <td>Envío de notificaciones push del servicio (recordatorios, alertas de fallo, resumen semanal)</td>
+        <td>Interés legítimo (6.1.f)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    GymOrDie <strong>no recopila</strong> datos de navegación web, historial de búsquedas,
+    lista de contactos del teléfono, datos de salud médica, ni datos con fines publicitarios.
+    No vendemos ni alquilamos datos personales a terceros.
+  </div>
+
+  <!-- 3 -->
+  <h2>3. Terceros que acceden a tus datos</h2>
+  <p>
+    Solo compartimos datos con los siguientes proveedores, en calidad de encargados del
+    tratamiento, y únicamente en la medida necesaria para prestar el servicio:
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Proveedor</th><th>Datos compartidos</th><th>Finalidad</th><th>País</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Stripe, Inc.</strong></td>
+        <td>Nombre, email, dirección, fecha de nacimiento, DNI/NIE, IBAN</td>
+        <td>Procesamiento de pagos y verificación KYC (Stripe Connect)</td>
+        <td>EE. UU. (cláusulas contractuales estándar UE)</td>
+      </tr>
+      <tr>
+        <td><strong>Railway (Render Infrastructure)</strong></td>
+        <td>Todos los datos de la base de datos</td>
+        <td>Alojamiento del servidor backend</td>
+        <td>EE. UU. / UE (cláusulas contractuales estándar UE)</td>
+      </tr>
+      <tr>
+        <td><strong>Expo / Expo Push</strong></td>
+        <td>Token de dispositivo</td>
+        <td>Servicio de notificaciones push</td>
+        <td>EE. UU. (cláusulas contractuales estándar UE)</td>
+      </tr>
+      <tr>
+        <td><strong>Google LLC</strong></td>
+        <td>Token de autenticación (Google Sign-In)</td>
+        <td>Autenticación social opcional</td>
+        <td>EE. UU. (cláusulas contractuales estándar UE)</td>
+      </tr>
+      <tr>
+        <td><strong>Apple Inc.</strong></td>
+        <td>Token de autenticación (Apple Sign-In)</td>
+        <td>Autenticación social opcional</td>
+        <td>EE. UU. (cláusulas contractuales estándar UE)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 4 -->
+  <h2>4. Conservación de los datos</h2>
+  <p>
+    Conservamos tus datos personales mientras tu cuenta esté activa. Si solicitas la
+    eliminación de tu cuenta:
+  </p>
+  <ul>
+    <li>Los datos de identidad (nombre, email, dirección, DNI, IBAN) se eliminan en un plazo máximo de <strong>30 días</strong>.</li>
+    <li>Los registros financieros (movimientos de saldo, comisiones) se conservan durante <strong>6 años</strong> por obligación contable y fiscal (Código de Comercio y Ley 10/2010).</li>
+    <li>Los datos de check-in anonimizados pueden conservarse con fines estadísticos internos.</li>
+  </ul>
+
+  <!-- 5 -->
+  <h2>5. Tus derechos (RGPD)</h2>
+  <p>
+    Como usuario en la Unión Europea tienes los siguientes derechos sobre tus datos personales:
+  </p>
+  <ul>
+    <li><strong>Acceso:</strong> obtener una copia de los datos que tenemos sobre ti.</li>
+    <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+    <li><strong>Supresión («derecho al olvido»):</strong> solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
+    <li><strong>Limitación del tratamiento:</strong> solicitar que suspendamos el uso de tus datos en determinadas circunstancias.</li>
+    <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado y legible por máquina.</li>
+    <li><strong>Oposición:</strong> oponerte al tratamiento basado en interés legítimo.</li>
+    <li><strong>Retirada del consentimiento:</strong> cuando el tratamiento se base en consentimiento, puedes retirarlo en cualquier momento sin que ello afecte a la licitud del tratamiento previo.</li>
+  </ul>
+  <p>
+    Para ejercer cualquiera de estos derechos, escríbenos a
+    <a href="mailto:hello@gymordie.com">hello@gymordie.com</a> indicando tu solicitud.
+    Responderemos en un plazo máximo de <strong>30 días</strong>.
+  </p>
+  <p>
+    Si consideras que el tratamiento de tus datos no es conforme a la normativa, puedes
+    presentar una reclamación ante la
+    <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a>.
+  </p>
+
+  <!-- 6 -->
+  <h2>6. Seguridad</h2>
+  <p>
+    GymOrDie aplica medidas técnicas y organizativas adecuadas para proteger tus datos:
+  </p>
+  <ul>
+    <li>Cifrado en tránsito mediante TLS 1.2+ en todas las comunicaciones.</li>
+    <li>IBAN y DNI cifrados en reposo con AES-256-GCM.</li>
+    <li>Contraseñas almacenadas como hash bcrypt (factor de coste 12).</li>
+    <li>Tokens JWT de sesión con expiración de 7 días.</li>
+    <li>Limitación de intentos de acceso y bloqueo automático de cuentas.</li>
+    <li>Acceso a datos de producción restringido al equipo técnico mediante autenticación de dos factores.</li>
+  </ul>
+
+  <!-- 7 -->
+  <h2>7. Menores de edad</h2>
+  <p>
+    GymOrDie está dirigida exclusivamente a mayores de 18 años. No recopilamos
+    conscientemente datos de menores de edad. Si detectamos que un usuario es menor,
+    eliminaremos su cuenta y datos de forma inmediata.
+  </p>
+
+  <!-- 8 -->
+  <h2>8. Transferencias internacionales</h2>
+  <p>
+    Algunos de nuestros proveedores (Stripe, Railway, Expo) están ubicados en Estados Unidos.
+    Las transferencias se realizan bajo las <strong>Cláusulas Contractuales Estándar</strong>
+    aprobadas por la Comisión Europea, que garantizan un nivel de protección equivalente al
+    del RGPD.
+  </p>
+
+  <!-- 9 -->
+  <h2>9. Cookies y tecnologías similares</h2>
+  <p>
+    GymOrDie es una aplicación móvil nativa y <strong>no utiliza cookies de navegador</strong>.
+    No realizamos seguimiento entre aplicaciones ni compartimos datos con redes publicitarias.
+  </p>
+
+  <!-- 10 -->
+  <h2>10. Cambios en esta política</h2>
+  <p>
+    Podemos actualizar esta política cuando sea necesario. Te notificaremos los cambios
+    significativos mediante una notificación en la app o por correo electrónico con al menos
+    7 días de antelación. La fecha de última actualización siempre aparece al inicio de este
+    documento.
+  </p>
+
+  <!-- 11 -->
+  <h2>11. Contacto</h2>
+  <p>
+    Para cualquier consulta sobre privacidad o para ejercer tus derechos:
+  </p>
+  <p>
+    📧 <a href="mailto:hello@gymordie.com">hello@gymordie.com</a><br>
+    📬 ASOCIACIÓN JUNIOR EMPRESA DANU · Plaza San Martín Nº 1, 28013 Madrid, España
+  </p>
+
+  <footer>
+    © 2026 GymOrDie · ASOCIACIÓN JUNIOR EMPRESA DANU · CIF G56505472 ·
+    <a href="mailto:hello@gymordie.com">hello@gymordie.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
